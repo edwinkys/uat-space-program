@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>
+    UAT Space Program
+  </title>
+
+  <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="/styles/inline.css">
+  <link rel="stylesheet" type="text/css" href="/style/custom.css">
+
+  <!-- Site Icon -->
+  <link rel="icon" href="https://i.ibb.co/8jYNNgM/UATSpace.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- Site Script -->
+  <script src="/scripts/script.js">
+    
+  </script>
+</head>
+<body>
+  <!-- Site Header -->
+    <header  class="container">
+      <img class="logo" src="https://i.ibb.co/8jYNNgM/UATSpace.png" alt="UAT Space Program" border="0" />
+      <h3 class="brand">UAT SPACE PROGRAM</h3>
+    </header>
+
+    <!-- Site Content -->
+    <main>
+      <div class="container">
+        <h1>UAT Space Program</h1>
+
+        <table>
+          <thead>
+            <tr style="background-color: #FFFFFF">
+              <th><strong>Data Type</strong></th>
+              <th><strong>Reading</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Time Elapsed -->
+            <tr>
+              <td>Time Elapsed</td>
+              <td><span id="time_elapsed">0</span> second(s)</td>
+            </tr>
+
+            <!-- Latitude -->
+            <tr>
+              <td>Latitude</td>
+              <td id="latitude">0</td>
+            </tr>
+
+            <!-- Longitude -->
+            <tr>
+              <td>Longitude</td>
+              <td id="longitude">0</td>
+            </tr>
+
+            <!-- GPS Altitude -->
+            <tr>
+              <td>GPS Altitude</td>
+              <td id="gps_altitude">0</td>
+            </tr>
+
+            <!-- BMP Sensor Altitude -->
+            <tr>
+              <td>BMP Sensor Altitude</td>
+              <td id="bmp_sensor_altitude">0</td>
+            </tr>
+
+            <!-- BMP Sensor Pressure -->
+            <tr>
+              <td>BMP Sensor Pressure</td>
+              <td id="bmp_sensor_pressure">0</td>
+            </tr>
+
+            <!-- BMP Sensor Temperature -->
+            <tr>
+              <td>BMP Sensor Temperature</td>
+              <td id="bmp_sensor_temperature">0</td>
+            </tr>
+
+            <!-- Digital Sensor Temperature -->
+            <tr>
+              <td>Digital Sensor Temperature</td>
+              <td id="digital_sensor_temperature">0</td>
+            </tr>
+
+            <!-- CSS Sensor Temperature -->
+            <tr>
+              <td>CSS Sensor Temperature</td>
+              <td id="css_sensor_temperature">0</td>
+            </tr>
+
+            <!-- CSS Sensor eCO2 -->
+            <tr>
+              <td>CSS Sensor eCO2</td>
+              <td id="css_sensor_eco2">0</td>
+            </tr>
+
+            <!-- CSS Sensor TVOC -->
+            <tr>
+              <td>CSS Sensor TVOC</td>
+              <td id="css_sensor_tvoc">0</td>
+            </tr>
+
+            <!-- UV -->
+            <tr>
+              <td>UV</td>
+              <td id="uv">0</td>
+            </tr>
+
+            <!-- Accel X -->
+            <tr>
+              <td>Accel X</td>
+              <td id="accel_x">0</td>
+            </tr>
+
+            <!-- Accel Y -->
+            <tr>
+              <td>Accel Y</td>
+              <td id="accel_y">0</td>
+            </tr>
+
+            <!-- Accel Z -->
+            <tr>
+              <td>Accel Z</td>
+              <td id="accel_z">0</td>
+            </tr>
+
+            <!-- Magnetic X -->
+            <tr>
+              <td>Magnetic X</td>
+              <td id="magnetic_x">0</td>
+            </tr>
+
+            <!-- Magnetic Y -->
+            <tr>
+              <td>Magnetic Y</td>
+              <td id="magnetic_y">0</td>
+            </tr>
+
+            <!-- Magnetic Z -->
+            <tr>
+              <td>Magnetic Z</td>
+              <td id="magnetic_z">0</td>
+            </tr>
+
+            <!-- Gyro X -->
+            <tr>
+              <td>Gyro X</td>
+              <td id="gyro_x">0</td>
+            </tr>
+
+            <!-- Gyro Y -->
+            <tr>
+              <td>Gyro Y</td>
+              <td id="gyro_y">0</td>
+            </tr>
+
+            <!-- Gyro Z -->
+            <tr>
+              <td>Gyro Z</td>
+              <td id="gyro_z">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Press the start button to countdown</p>
+        
+        <h1 id="countdown">--:--:--</h1>
+        <div>
+          <button class="button" type="button" onclick="countdown(seconds=50)">Start Countdown</button>
+          <button class="secondary_button" type="button" onclick="insert_sample_data()">Insert Data</button>
+          <button class="secondary_button" type="button" onclick="reset_data()">Reset Data</button>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
